@@ -1,8 +1,8 @@
 % Introduction au Green IT logiciel
 % David Sferruzza
-% Human Talks Nantes - 11/03/2014
+% Human Talks 11/03/2014
 
-# À propos de moi
+### À propos de moi
 
 - [\@d_sferruzza](https://twitter.com/d\_sferruzza)
 - [github.com/dsferruzza](https://github.com/dsferruzza)
@@ -13,21 +13,73 @@
 
 ## Qu'est ce que c'est ?
 
+Proposition de définition :
+
+> Démarche d’amélioration continue qui vise à réduire l’empreinte écologique, économique et sociale des technologies de l’information et de la communication.
+
+## Qu'est ce que c'est ?
+
+![Développement durable](developpement_durable.png)
+
 ## À quoi ça sert ?
 
-## Cycle de vie d'un produit
+Consommer moins d'énergie implique :
 
-# Optimiser un programme
+- consommer moins de ressources naturelles
+- moins polluer
+- réduire les coûts
+
+# Réduire l'empreinte d'un programme
 
 ## Que peut-on optimiser ?
 
+![](cycle_de_vie_produit.jpg)
+
 ## Approche matérielle
 
-## Approche logicielle
+Agir sur le matériel qui fait fonctionner les programmes.
+
+Exemples :
+
+- réduire le dégagement de chaleur d'un processeur
+- réduire le coût énergétique de la fabrication d'un disque dur
 
 ### Avantages/inconvénients
 
+- possible d'obtenir un gain important
+- difficile d'accès pour le développeur
+
+## Approche logicielle
+
+Agir directement sur les programmes.
+
+Exemples :
+
+- supprimer des opérations inutiles
+- réduire la configuration matérielle minimum requise
+
+### Avantages/inconvénients
+
+- à la portée du développeur
+- gain moins important (mais pas forcément non significatif)
+
 ## Mesure du gain
+
+Soient :
+
+- **A**, un programme
+- **B**, une version optimisée de A
+
+. . .
+
+Pour savoir si l'optimisation est concluante, il faut :
+
+- choisir des **indicateurs**
+- mesurer un **gain**
+
+. . .
+
+$gain = \frac{indicateur_{B}}{indicateur_{A}}$
 
 ## Indicateurs
 
@@ -37,58 +89,14 @@
 
 # Exemple
 
-## hypothèse
+## Hypothèse
 
-## plan d'expérience
+## Plan d'expérience
 
-## programmes de test
+## Programmes de test
 
-## mesures
+## Mesures
 
-## analyse
-
-## conclusion
+## Analyse
 
 # Conclusion
-
-
-<!--
-Introduction au Green IT logiciel
-=================================
-
-## définition du Green IT, à quoi ça sert ?
-	-> optimiser le rendement énergétique d'une application = consommer moins d'énergie/d'argent pour réaliser les mêmes fonctions
-
-## le cycle de vie d'un produit (fabrication, exploitation, ...)
-	-> on doit regarder le cycle entier, pas seulement l'exploitation
-	
-## que peut-on optimiser ?
-	-> passage en revue des étapes du cycle
-### approche matérielle
-	-> exemples d'optimisations hardware
-### approche logicielle
-	-> exemples d'optimisations software
-	
-## avantages/inconvénients de l'approche logicielle
-
-## pour donner du sens à l'optimisation, il faut pouvoir mesurer le gain
-
-## quels indicateurs choisir ?
-	-> exemple d'indicateurs choisi dans le cadre du projet Code Vert
-
-## comment mesurer ces indicateurs ?
-### mesures physiques
-### mesures logiques
-
-## exemple d'une mesure réalisée pour Code Vert
-### hypothèse
-### plan d'expérience
-### programmes de test
-### mesures
-### analyse
-### conclusion
-
-## intérêt de l'approche logicielle
-
-## conclusion
--->
