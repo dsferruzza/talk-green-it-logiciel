@@ -29,7 +29,7 @@ Consommer moins d'énergie implique :
 - moins polluer
 - réduire les coûts
 
-# Réduire l'empreinte d'un programme
+# Réduire l'empreinte énergétique d'un programme
 
 ## Que peut-on optimiser ?
 
@@ -61,7 +61,7 @@ Exemples :
 ### Avantages/inconvénients
 
 - à la portée du développeur
-- gain moins important (mais pas forcément non significatif)
+- gain à priori moins important (mais pas forcément non significatif)
 
 ## Mesure du gain
 
@@ -79,15 +79,31 @@ Pour savoir si l'optimisation est concluante, il faut :
 
 . . .
 
-$gain = \frac{indicateur_{B}}{indicateur_{A}}$
+> $gain = \frac{indicateur_{B}}{indicateur_{A}}$
 
 ## Indicateurs
 
-### Mesures physiques
+Un bon indicateur (observable) est en **corrélation** avec la grandeur qu'on souhaite connaitre.
 
-### Mesures logiques
+À lire : http://ploum.net/mefiez-vous-des-observables/
 
-# Exemple
+## Indicateurs
+
+Exemple : surconsommation énergétique provoquée par l'exécution du programme
+
+- en Joule
+- obtenu par mesure physique 
+
+![](graphe.png)
+
+## Indicateurs
+
+Exemple : maximum de la mémoire vive occupée
+
+- en octet
+- obtenu par mesure logique
+
+# Exemple d'expérience
 
 ## Hypothèse
 
@@ -100,3 +116,17 @@ $gain = \frac{indicateur_{B}}{indicateur_{A}}$
 ## Analyse
 
 # Conclusion
+
+## Conclusion
+
+- optimiser pour la conso $\simeq$ optimiser pour les perfs
+- bientôt plus besoin de mesures physiques ?
+
+. . .
+
+De manière générale :
+
+- prendre en compte **l'ensemble** du cycle
+- choisir de **bons indicateurs** par rapport à ce qu'on veut mesurer
+- **reproduire** l'expérience
+- faire **varier** les paramètres d'environnement
