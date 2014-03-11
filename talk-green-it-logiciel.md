@@ -107,13 +107,76 @@ Exemple : maximum de la mémoire vive occupée
 
 ## Hypothèse
 
+On veut vérifier l'hypothèse suivante :
+
+> En Java, il vaut mieux initialiser les variables de manière littérale plutôt qu'avec un objet.
+
 ## Plan d'expérience
+
+On mesure la *surconsommation énergétique* provoquée par l'exécution de 2 programmes de **fonction(s) identique(s)**.
+
+Matériel :
+
+- un ordinateur d'essai dont l'alimentation est monitorée
+- un ordinateur d'acquisition
+
+Déroulement de la mesure :
+
+1. lancement de la mesure
+2. attente de X secondes
+3. lancement de la perturbation (programme sur l'ordinateur d'essai)
+4. fin de la perturbation
+5. attente de Y secondes
+6. fin de la mesure
 
 ## Programmes de test
 
+**Hypothèse :** les techniques de micro-benchmarking permettent d'obtenir un résultat pertinent
+
+### Code "vert"
+
+```java
+for (int i = 0; i < 1000; i++) {
+	array[i] = "abcdefg...";
+}
+```
+
+### Code "gris"
+
+```java
+for (int i = 0; i < 1000; i++) {
+	array[i] = new String("abcdefg...");
+}
+```
+
 ## Mesures
 
+![](MeasureTaskResult.png)
+
 ## Analyse
+
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	Variante & Énergie code vert & Énergie code gris & Gain \\
+	\hline
+	\hline
+	String & 697 J \footnotesize{($\pm$ 4,40 \%)} & 7885 J \footnotesize{($\pm$ 8,14 \%)} & 11,3 \\
+	\hline
+	Integer & 685 J \footnotesize{($\pm$ 5,21 \%)} & 9575 J \footnotesize{($\pm$ 6,51 \%)} & 14,0 \\
+	\hline
+	Float & 10311 J \footnotesize{($\pm$ 5,85 \%)} & 10448 J \footnotesize{($\pm$ 6,58 \%)} & 1,0 \\
+	\hline
+	Double & 10003 J \footnotesize{($\pm$ 5,58 \%)} & 10210 J \footnotesize{($\pm$ 7,83 \%)} & 1,0 \\
+	\hline
+\end{tabular}
+
+Avec cet indicateur : gain significatif avec certains types mais pas tous !
+
+Pour aller plus loin :
+
+- reproduire dans des conditions/environnements différents
+- reproduire avec des programmes différents
+- regarder d'autres indicateurs
 
 # Conclusion
 
@@ -130,3 +193,9 @@ De manière générale :
 - choisir de **bons indicateurs** par rapport à ce qu'on veut mesurer
 - **reproduire** l'expérience
 - faire **varier** les paramètres d'environnement
+
+## Bisous
+
+*Merci à Jérôme Rocheteau*
+
+\Huge{Questions ?}
