@@ -111,24 +111,6 @@ On veut vérifier l'hypothèse suivante :
 
 > En Java, il vaut mieux initialiser les variables de manière littérale plutôt qu'avec un objet.
 
-## Plan d'expérience
-
-On mesure la *surconsommation énergétique* provoquée par l'exécution de 2 programmes de **fonction(s) identique(s)**.
-
-Matériel :
-
-- un ordinateur d'essai dont l'alimentation est monitorée
-- un ordinateur d'acquisition
-
-Déroulement de la mesure :
-
-1. lancement de la mesure
-2. attente de X secondes
-3. lancement de la perturbation (programme sur l'ordinateur d'essai)
-4. fin de la perturbation
-5. attente de Y secondes
-6. fin de la mesure
-
 ## Programmes de test
 
 **Hypothèse :** les techniques de micro-benchmarking permettent d'obtenir un résultat pertinent
@@ -148,6 +130,24 @@ for (int i = 0; i < 1000; i++) {
 	array[i] = new String("abcdefg...");
 }
 ```
+
+## Plan d'expérience
+
+On mesure la *surconsommation énergétique* provoquée par l'exécution de 2 programmes de **fonction(s) identique(s)**.
+
+Matériel :
+
+- un ordinateur d'essai dont l'alimentation est monitorée
+- un ordinateur d'acquisition
+
+Déroulement de la mesure :
+
+1. lancement de la mesure
+2. attente de X secondes
+3. lancement de la perturbation (programme sur l'ordinateur d'essai)
+4. fin de la perturbation
+5. attente de Y secondes
+6. fin de la mesure
 
 ## Mesures
 
@@ -170,13 +170,13 @@ for (int i = 0; i < 1000; i++) {
 	\hline
 \end{tabular}
 
-Avec cet indicateur : gain significatif avec certains types mais pas tous !
+Avec cet indicateur : gain significatif avec certains types, mais pas tous !
 
 Pour aller plus loin :
 
+- regarder d'autres indicateurs
 - reproduire dans des conditions/environnements différents
 - reproduire avec des programmes différents
-- regarder d'autres indicateurs
 
 # Conclusion
 
