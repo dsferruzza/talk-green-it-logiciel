@@ -177,6 +177,7 @@ Pour aller plus loin :
 - regarder d'autres indicateurs
 - reproduire dans des conditions/environnements différents
 - reproduire avec des programmes différents
+- essayer de comprendre la différence de gain
 
 # Conclusion
 
