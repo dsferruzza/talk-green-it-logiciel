@@ -197,6 +197,8 @@ De manière générale :
 
 ## Bisous
 
+<https://github.com/dsferruzza/talk-green-it-logiciel>
+
 *Merci à Jérôme Rocheteau*
 
 \Huge{Questions ?}
